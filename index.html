@@ -2,15 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>
-			Ivan Dziubenko
-		</title>
-		<meta name="description" content="Ivan Dziubenko">
+		<title>Motley — Living Calendar</title>
+		<meta name="description" content="Motley is a Mac app that shows weeks of your life on a desktop calendar and improves mindfulness">
 		<meta name="author" content="Ivan Dziubenko">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="styles/reset.css">
 		<link rel="stylesheet" href="styles/styles.css">
-		<link rel="icon" href="fav.svg" type="image/svg+xml">
+		<link rel="icon" href="image/logo1.svg" type="image/svg+xml">
 	</head>
 	<body>
 		<main>
@@ -20,11 +18,11 @@
 		
 	</div>
 	<div class="grid-16 centered">
-				<h1 class="strip hero" style="text-align: center; margin: 60px 0 40px">Build a <span class="gradient">reflection</span> habit</h1>
+				<h1 id="title" class="hero">Build a <span class="gradient">reflection</span> habit</h1>
 				<div style="grid-column: 3 / span 5">
-				<h2 class="t-mb">About</h2>
+				<h2 id="about-title" class="t-mb">About</h2>
 	<p id="about">
-	Motley — a Mac app that shows weeks of your life on a desktop. Each week of your life shown as a small box on a chart, each box can be filled with interesting events, colors, links and emojis.
+	Motley — a Mac app that shows weeks of your life on a desktop. Each week of your life shown as a small box on a chart, each box can be filled with interesting events, colors, emojis.
 </p>
 
 				<blockquote><p>Think of it as filling a travel map of where you've been, but for your experiences.</p></blockquote>
@@ -42,7 +40,8 @@
 					
 
 				<div>
-					<p style="text-indent: -1.3em; transform: rotateX(2deg)"><span class="bold">📆 Moodtrackers.</span> You want to track your mood and reflect on your experience. Track mood, habits, health state with colorful events and emojis.</p>
+					<p style="text-indent: -1.3em; transform: rotateX(2deg)"><span class="bold">📆 Moodtrackers.</span> You want to keep a record of your mood and reflect on your experiences. Track mood, habits, health state with colorful events and emojis. <img src="image/moodtrackers.svg" style="vertical-align: middle"></p>
+
 				</div>
 				<div>
 					<p style="text-indent: -1.3em; transform: rotateX(2deg)"><span class="bold">🌸 Mindful.</span> You want to value your time better and bring good memories back. Reflect on your experiences and store precious moments in your life calendar.</p>
@@ -53,10 +52,11 @@
 Keep your notes and reflections in a visual way.</p>
 				</div>
 				<div>
-					<p style="text-indent: -1.3em; transform: rotateX(2deg)"><span class="bold">🗺 Planers.</span> Set life milestones and create long-term plans for the future. Focus on a given range and get bird’s-eye view on your life.</p>
+					<p style="text-indent: -1.3em; transform: rotateX(2deg)"><span class="bold">🗺 Planers.</span> Set life milestones and create long-term plans for the future. Focus on a desired range and get bird’s-eye view on your life.</p>
+					<img src="image/focus.svg" style="margin: 15px 0 0">
 				</div>
 				</div>
-				<h2 class="full hero gradient-bottom typography">Visualal  approach to note-taking<br>See experiences rather than read them</h2>
+				<h2 class="full gradient-bottom typography" style="text-align: center">Your calendar become a visual daily log,<br>see instead of read</h2>
 
 	</div>
 	</section>
@@ -66,12 +66,12 @@ Keep your notes and reflections in a visual way.</p>
 
 	<div class="grid-12 centered mb-100">
 	<div class="grid-3 strip">
-		<h1 id="features-title" class="strip typography" style="font-size: 96px">
+		<h1 id="features-title" class="strip typography hero">
 			Features
 		</h1>
 		<div class="feature">
-			<h3 class="typography">
-				Layout<img src="image/layout.svg" style="position: relative; bottom: -10px; right: -15px">
+			<h3 class="typography relative">
+				Layout<img src="image/layout.svg" style="position: absolute; bottom: -10px; margin-left: 15px">
 			</h3>
 			<p>
 				Group your weeks by months, 4ths or without grouping. Layout can increase tangibility of time, choose what better fits you
@@ -82,15 +82,15 @@ Keep your notes and reflections in a visual way.</p>
 				Color & Themes
 			</h3>
 			<p>
-				Group your weeks by months, 4ths or without grouping. Layout can increase tangibility of time, choose what better fits you
+				Set a specific colour for an event or its calendar. Use colours for grouping or distinguishing. Set a theme for the entire calendar with color themes.
 			</p>
 		</div>
 		<div class="feature">
 			<h3 class="typography relative">
-				Emojis<span style="display: inline-block; transform: rotate(-20deg); font-size: 60px; position: absolute; top: -10px" class="emoji-animation">🃏</span>
+				Emojis<span class="joker-emoji emoji-animation">🃏</span>
 			</h3>
 			<p>
-				Group your weeks by months, 4ths or without grouping. Layout can increase tangibility of time, choose what better fits you
+				Put an emoji to your event to make it more personal and distinguishable. Easily build moodtrackers with constantly tracking you mood with an emoji.
 			</p>
 		</div>
 	</div>
@@ -102,7 +102,7 @@ Keep your notes and reflections in a visual way.</p>
 <!--Living Wallpaper -->
 <div class="grid-16 centered  mb-100 perspective">
 			<img src="image/calendar-integration.png" class="shadow rounded" style="grid-column-start: span 10; transform: rotateY(1deg)">
-	<div class="feature-significant" style="grid-column: 11 / -1; margin-left: 20px; margin-top: -117px">
+	<div class="feature-significant" style="grid-column: 11 / -1; margin-top: -117px">
 		<div style="text-align: center" class="perspective">
 			<img src="image/status-menu@2x.png" width="220" height="117" class="menu">
 		</div>
@@ -110,8 +110,9 @@ Keep your notes and reflections in a visual way.</p>
 			Living Wallpaper
 		</h3>
 		<p>
-			Group your weeks by months, 4ths or without grouping. Layout can increase tangibility of time, choose what better fits you
+			Put your calendar onto your desktop, making your wallpaper live. Get inspired just by a glance, always in sight. 
 		</p>
+		<p>Be motivated to keep your journey and grow mindfulness.</p>
 
 	</div>
 </div>
@@ -126,10 +127,12 @@ Keep your notes and reflections in a visual way.</p>
 Calendar Integration
 		</h3>
 		<p>
-			Group your weeks by months, 4ths or without grouping. Layout can increase tangibility of time, choose what better fits you
+			All your events are live in you standard Calendar app. No effort is needed to learn a new app or worry about losing your data.
+		</p>
+		<p>Do everything Calendar can do: share, subscribe, access from different devices.
 		</p>
 	</div>
-			<img src="image/calendar-integration.png" class="shadow rounded" style="grid-column: 7 / -1; margin-left: 20px; transform: rotateY(-1deg)">
+			<img src="image/calendar-integration.png" class="shadow rounded" style="grid-column: 7 / -1; transform: rotateY(-1deg)">
 </div>
 
 
@@ -149,63 +152,72 @@ Calendar Integration
 	
 	<div class="feature">
 		<h3 class="typography">
-			Layout
+			Sharing & Sync
 		</h3>
 		<p>
-			Group your weeks by months, 4ths or without grouping. Layout can increase tangibility of time, choose what better fits you
+			Share calendars with others, collaborate on shared goals, plan for the future.
+			Sync calendars with iCloud calendar.
 		</p>
 	</div>
 
 	<div class="feature">
 		<h3 class="typography">
-			Layout
+			Dataownership
 		</h3>
 		<p>
-			Group your weeks by months, 4ths or without grouping. Layout can increase tangibility of time, choose what better fits you
+			Group your weeks by months, 4ths or without grouping. Layout can increase tangibility of time, choose what better fits you. Don't worry about locking up your data.
 		</p>
 	</div>
 	</div>
+	
+	<p class="strip t-2mt">
+		And even more: <span class="bold">Search, calendar share, multiple calendars, hide desktop icons, random event, calendar colors, customisable range</span>
+	</p>
 	</div>
+	
+	
 	
 		<div style="text-align: center; margin: 100px 0 30px">
 		<a class="image" href="#"><img src="image/mas-download-black.svg"></a>
 	</div>
 	
+
 		<div id="color-well" class="wow"></div>	
 </section>
 
 
-<section id="faq" >
-	<div class="container grid-fluid-12 centered" style="gap: 40px 20px">
+<section id="faq" style="overflow: hidden">
+	<div class="container centered g-gap">
 
-	<h1 class="strip">FAQ</h1>
-	
+
+	<h1 class="strip typography hero">FAQ</h1>
+
 	<div class="question">
-	<h2>How can I export my events?</h2>
+	<h2 class="typography">How can I export my events?</h2>
 		<p>Dynamic themes for you liking. Designed not to distract you and eliminate visual glitches.</p>
 	</div>
 	
 	<div class="question">
-	<h2>How to share?</h2>
+	<h2 class="typography">How to share?</h2>
 		<p>Dynamic themes for you liking. Designed not to distract you and eliminate visual glitches.</p>
 	</div>
 	
 	<div class="question">
-	<h2>Am I secure?</h2>
+	<h2 class="typography">Am I secure?</h2>
 		<p>Dynamic themes for you liking. Designed not to distract you and eliminate visual glitches.</p>
 	</div>
 	
 	<div class="question">
-	<h2>What do colors mean?</h2>
+	<h2 class="typography">What do colors mean?</h2>
 		<p>Dynamic themes for you liking. Designed not to distract you and eliminate visual glitches.</p>
 	</div>
 	
 	<div class="question">
-	<h2>How to enable multiple calendars?</h2>
+	<h2 class="typography">How to enable multiple calendars?</h2>
 		<p>Dynamic themes for you liking. Designed not to distract you and eliminate visual glitches.</p>
 	</div>
 <div class="question">
-	<h2>Is this Life Calendar?</h2>
+	<h2 class="typography">Is this Life Calendar?</h2>
 		<p>Dynamic themes for you liking. Designed not to distract you and eliminate visual glitches.</p>
 	</div>
 	
