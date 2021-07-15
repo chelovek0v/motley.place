@@ -717,6 +717,13 @@ p.t-2mt {
 
 }
 
+.video-container {
+	position:relative;
+	grid-column: 8 / -1;
+	margin-top: -10px;
+	margin-left: 20px;
+}
+
 @media (max-width: 1020px) {
 	
 
@@ -758,10 +765,36 @@ p.t-2mt {
 	#about-title {
 		display: none;
 	}
+	
+	
+	.video-container {
+		margin-top: 0;
+		margin-left: 0;
+	}
+	
+	.perspective { 
+		perspective: none;
+	}
+	
+	.perspective * {
+		transform: none;
+	}
 }
 
 
+
+.footer-menu {
+	display: flex; 
+	justify-content: space-between;
+}
+
+
+
 @media (max-width: 700px) {
+	.footer-menu {
+		flex-direction: column;
+		
+	}
 	
 	#who {
 		display: flex;
