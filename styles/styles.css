@@ -95,23 +95,21 @@ h2.t-mb {
 }
 
 html {
+	height: 100%;
 	font-size: var(--atom);
 	line-height: var(--line-height);
-
-/*	background: linear-gradient(0deg, rgba(52,45,103,1) 0%, rgba(9,9,121,1) 74%, rgba(20,16,52,1) 100%) fixed;*/
 }
 
 
 
 
 body {
-/*    height: 100%;*/
+	background: #342D67;
+    height: 100%;
+    background-repeat: no-repeat;
+      background-attachment: fixed;
        margin: 0;
 
-/*	background-color: rgb(52,45,103);*/
-/*	background: linear-gradient(0deg, rgba(52,45,103,1) 0%, rgba(9,9,121,1) 74%, rgba(20,16,52,1) 100%) fixed;*/
-/*    background-repeat: no-repeat;*/
-/*    background-attachment: fixed;*/
 	
 	font-family: "Ignazio", system-ui, sans-serif;
 }
@@ -340,17 +338,14 @@ video {
 
 
 .feature-significant {
+		padding: 0 40px;
 	align-self: center;
 }
 
 .feature-significant h3 {
-	text-align: center;
 	margin-top: 10px;
 }
 
-.feature-significant p {
-	padding: 0 40px;
-}
 
 img {
 	max-width: 100%;
@@ -453,6 +448,10 @@ img {
 
 .mt-80 {
 	margin-top: 80px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
 }
 
 

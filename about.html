@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Motley — Living Calendar</title>
+<meta name="description" content="Motley is a Mac app that shows weeks of your life on the desktop. It helps you be motivated and grow mindfulness. Plot a calendar of your life and fill it with interesting events.">
+		<meta name="author" content="Ivan Chelovekov">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/styles.css">
+				<script defer data-domain="motley.place" src="https://plausible.io/js/plausible.js"></script>
+		<link rel="icon" href="image/logo1.svg" type="image/svg+xml">
+	</head>
+	<body>
+		<main style="height: 100%">
+			<article style="display: grid; grid-template-rows: 1fr auto; min-height: 100%;">
+
+<section id="faq" class="padding">
+	<div class="container centered g-gap">
+
+
+	<h1 class="strip typography hero">About</h1>
+
+	
+		<p>Dynamic themes for you liking. Designed not to distract you and eliminate visual glitches.</p>
+	
+	
+</div>
+	
+</section>
+<footer>
+	<nav>
+		<ul class="footer-menu container small centered">
+			<li>
+				<a href="https://www.notion.so/Motley-Support-45128757c182411f85883f0364a4fabf" class="accent">Support</a>
+			</li>
+			<li>
+				<a href="https://www.notion.so/Privacy-Policy-93db5c2a2ea14e9682074a9b1001b2cc" class="accent">Privacy</a>
+			</li>
+			<li>
+				<a href="https://www.notion.so/Terms-of-Use-51c1640f79924ee8a61b463ba12deccf" class="accent">Terms</a>
+			</li>
+			<li>
+				<a href="https://www.notion.so/Changelog-4d49335ef70a4291bf06ac420ed154d0" class="accent">What's New</a>
+			</li>
+			<li>
+				<a href="mailto:support@motley.place" class="accent">support@motley.place</a>
+			</li>
+		</ul>
+	</nav>
+</footer>
+
+
+			</article>
+			
+		</main>
+	
+	
+		<script>
+		
+		
+		const startAnimation = (entries, observer) => {
+		  entries.forEach(entry => {
+
+						
+						if (entry.isIntersecting) {
+							setTimeout(function() {
+								entry.target.classList.add("anim");	
+							}, 300);
+						}
+		  });
+		};
+
+		const observer = new IntersectionObserver(startAnimation);
+		const options = { root: null, rootMargin: '0px', threshold: 1 }; 
+
+		
+		document.querySelectorAll('.menu').forEach(el => {
+		  observer.observe(el, options);
+		});
+		
+		
+		const colorWell =
+		document.querySelector('#color-well')
+		const colorWellHandler = (entries, observer) => {
+		  entries.forEach(entry => {
+console.log(entry,entry.isIntersecting);
+
+						if (entry.isIntersecting) {
+							
+      
+							
+							setTimeout(function() {
+								colorWell.classList.add("flicker");	
+							}, 1000);
+						}
+		  });
+		};
+
+		const colorWellOptions = { root: null, rootMargin: '-25% 0px', threshold: 1 };
+		const colorWellIntersection = new IntersectionObserver(colorWellHandler, colorWellOptions);
+ 		
+		
+		document.querySelectorAll('#features-title').forEach(el => {
+		  colorWellIntersection.observe(el);
+		});
+		
+		
+		</script>
+		
+		<script src="https://player.vimeo.com/api/player.js"></script>
+	</body>
+</html>
